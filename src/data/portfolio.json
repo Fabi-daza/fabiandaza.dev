@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "nombre": "Mercadotech",
+        "descripcion": "Marketplace para la venta de articulos tecnologicos. App CRUD con react, express y Postgresql",
+        "demo":"https://mercadotech-front.onrender.com/",
+        "repositorio":"https://github.com/Fabi-daza/Mercado-tech",
+        "img":"https://i.postimg.cc/CM90jq7Y/desktop.webp",
+        "alt":"Marketplace de Tecnologia",
+        "skills": [
+            "https://i.ibb.co/DKNhsSj/React.webp",
+            "https://i.ibb.co/4fFNS4G/icons8-oreja-48.webp",
+            "https://i.ibb.co/bbsJnsR/icons8-nodo-js-48.webp",
+            "https://i.ibb.co/XyQNRzq/icons8-postgresql-48.webp"
+        ]
+        
+    }
+]

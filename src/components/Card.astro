@@ -1,0 +1,19 @@
+---
+import Icono from "./Icono.astro";
+const {nombre, descripcion, demo, repositorio, img,alt, skills} = Astro.props;
+
+---
+<div class="w-[300px] bg-white rounded-xl flex flex-col items-center">
+    <img class="shadow-lg m-3" src={img} alt={alt}>
+    <h4 class="text-blue-500 font-bold">{nombre}</h4>
+    <p class="text-black text-lg text-center p-3">{descripcion}</p>
+    <div class="flex ">
+        {skills.map(skill =>(
+            <Icono src={skill}></Icono>
+        ))}
+    </div>
+    <div class="card-buttons w-[100%] p-5 flex justify-center">
+        <a class="text-white bg-blue-500 w-[50%] text-center m-1 p-2 rounded-lg shadow-lg shadow-zinc-400" href={demo}>Demo</a>
+        <a class="text-white bg-blue-500 w-[50%] text-center m-1 p-2 rounded-lg shadow-lg shadow-zinc-400" href={repositorio}>Repositorio</a>
+    </div>
+</div>
