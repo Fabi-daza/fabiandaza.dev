@@ -1,0 +1,13 @@
+---
+const {src, alt, titulo, subtitulo} = Astro.props
+---
+
+<div class="bg-white flex items-center rounded-lg">
+    <div class="w-[30vw] lg:w-[20vw]">
+      <img src={src} alt={alt}>
+    </div>
+    <div class="w-[60vw]">
+      <h4 class="text-black text-center p-2">{titulo}</h4>
+      <p class="text-center text-black">{subtitulo}</p>
+    </div>
+  </div>

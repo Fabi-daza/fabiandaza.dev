@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Card from "../components/Card.astro"
 import data from "../data/portfolio.json"
 import Icono from "../components/Icono.astro";
+import GradeCard from "../components/Grade-card.astro";
 
 ---
 
@@ -132,8 +133,8 @@ import Icono from "../components/Icono.astro";
       </div>
 
     </section>
-    <section class="flex flex-col items-center py-[60px]">
-      <h3 class="text-blue-500 text-3xl p-5 font-bold">Portafolio 💼</h3>
+    <section class="flex flex-col items-center py-[60px]" id="portfolio">
+      <h3 class="text-blue-500 text-3xl p-5 font-bold"> Portafolio 💼</h3>
       <div>
         {data.map((proyecto) => (
           <Card 
@@ -150,6 +151,11 @@ import Icono from "../components/Icono.astro";
                 
         )}
       </div>
+    </section>
+    <section class="flex flex-col items-center py-[60px] bg-zinc-900"
+    id="formacion">
+      <h3 class="text-white text-3xl p-5 font-bold">Formación</h3>
+      <GradeCard src="https://lever-client-logos.s3.us-west-2.amazonaws.com/25f40b68-174d-4990-91d5-3781ff4f98fe-1658769798714.png" alt="Logo Academia desafio latam" titulo="Desarrollo Fullstack Javascript" subtitulo="2023 - Finalizado"></GradeCard>
     </section>
   </main>
 </Layout>
