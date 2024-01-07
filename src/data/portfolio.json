@@ -8,11 +8,27 @@
         "img":"https://i.postimg.cc/CM90jq7Y/desktop.webp",
         "alt":"Marketplace de Tecnologia",
         "skills": [
-            "https://i.ibb.co/DKNhsSj/React.webp",
-            "https://i.ibb.co/4fFNS4G/icons8-oreja-48.webp",
-            "https://i.ibb.co/bbsJnsR/icons8-nodo-js-48.webp",
-            "https://i.ibb.co/XyQNRzq/icons8-postgresql-48.webp"
+            "https://i.postimg.cc/Zngr8cXB/react.webp",
+            "https://i.postimg.cc/GtMZzCXM/express1.webp",
+            "https://i.postimg.cc/QCN2ptJ9/postgre.webp",
+            "https://i.postimg.cc/LsBBcjgw/bootstrap.webp"
         ]
+        
+    },
+    {
+        "id":2,
+        "nombre": "Turboinyeccion",
+        "descripcion": "Tienda dedicada a la venta y reparación de tubocompresores, realizada con wordpress, optimizada para el SEO y marketing a través de Google ADS",
+        "demo":"https://turboinyeccion.cl/",
+        "repositorio":null,
+        "img":"https://i.postimg.cc/4y9zN3Z9/Turboinyeccion-3.webp",
+        "alt":"Marketplace de Tecnologia",
+        "skills": [
+            "https://i.postimg.cc/VLVxCzrv/wordpress1.webp",
+            "https://i.postimg.cc/8zfqdxMH/googleads1.webp",
+            "https://i.postimg.cc/7Pm8q3qg/seo.webp"
+        ],
+        "repoDisplay":"display: none"
         
     }
 ]
