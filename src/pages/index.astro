@@ -1,11 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import Card from "../components/Card.astro"
-import data from "../data/portfolio.json"
+import Card from "../components/Card.astro";
+import data from "../data/portfolio.json";
 import Icono from "../components/Icono.astro";
 import GradeCard from "../components/Grade-card.astro";
-
 ---
 
 <Layout title="Fabian Daza Fullstack Developer">
@@ -13,7 +12,7 @@ import GradeCard from "../components/Grade-card.astro";
   <main>
     <section class="hero flex justify-center items-center">
       <div
-        class="bg-zinc-900 flex flex-col items-center w-[300px] p-[30px] rounded-3xl shadow-xl shadow-blue-500/50 tra"
+        class="bg-zinc-900 flex flex-col items-center w-[300px] p-[30px] rounded-3xl shadow-xl shadow-blue-500/50"
       >
         <img
           src="./imagenes/perfil-linkedin.webp"
@@ -23,185 +22,229 @@ import GradeCard from "../components/Grade-card.astro";
         <h1 class="text-center text-2xl mt-3">Fabián Daza</h1>
         <h2 class="text-center">Desarrollador fullstack</h2>
         <div class="flex justify-center">
-			<a class="p-3 text-white hover:text-blue-500 ease-out duration-300 fill-white hover:fill-blue-500" href="https://www.linkedin.com/in/fbdaza/">
-				<svg
-				xmlns="http://www.w3.org/2000/svg"
-				class="icon icon-tabler icon-tabler-brand-linkedin"
-				width="40"
-				height="40"
-				viewBox="0 0 24 24"
-				stroke-width="2"
-				stroke="currentColor"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-				  d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
-				></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"
-				></path><path d="M12 16l0 -5"></path><path
-				  d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
-			</a>
-			<a class="p-3 text-white hover:text-blue-500 ease-out duration-300 fill-white hover:fill-blue-500" href="https://github.com/Fabi-daza">
-        <svg
-				xmlns="http://www.w3.org/2000/svg"
-				class="icon icon-tabler icon-tabler-brand-github"
-				width="40"
-				height="40"
-				viewBox="0 0 24 24"
-				stroke-width="2"
-				stroke="currentColor"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-				  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-				></path></svg>
-      </a>
-
+          <a
+            class="p-3 text-white hover:text-blue-500 ease-out duration-300 fill-white hover:fill-blue-500"
+            href="https://www.linkedin.com/in/fbdaza/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-linkedin"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+              ></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"
+              ></path><path d="M12 16l0 -5"></path><path
+                d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg
+            >
+          </a>
+          <a
+            class="p-3 text-white hover:text-blue-500 ease-out duration-300 fill-white hover:fill-blue-500"
+            href="https://github.com/Fabi-daza"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-github"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+              ></path></svg
+            >
+          </a>
         </div>
       </div>
     </section>
     <section class="flex flex-col items-center py-[60px]" id="about">
       <h3 class="text-blue-500 text-3xl p-5 font-bold">Sobre mí 😎</h3>
       <p>
-        Profesional <b>autodidacta y curioso</b>, con foco en el
-        <b>aprendizaje constante</b>. Comencé a estudiar programación con el
-        deseo una transformación profesional, previamente ejercí como
-        Constructor Civil pero todo me indicaba que mi rumbo apuntaba hacia el
-        mundo
-        <b>TI</b>.
-      </p>
-      <p>
-        Comencé realizando sitios web en <b>Wordpress</b> y estudiando sobre
-        <b>SEO</b> para ofrecer mis servicios de páginas web principalmente a Pymes
-        y ecommerce que tenían la necesidad de transformar su forma de vender y digitalizar
-        sus empresas, junto con esto comencé a estudiar sobre <b>SEM</b> para acelerar
-        el proceso de visualización de sus negocios.
-      </p>
-      <p>
-        Todo esto me llevó a querer <b>estudiar programación</b>, para poder dar
-        mayor personalización a todo lo realizado y poder desarrollar todo
-        aquello que quisiera, ahí comprendí que mi <b>real pasión</b> más que el
-        marketing era la programación el hecho de
-        <b>transformar una idea en un proyecto real y funcional</b> es lo que más
-        me emociona, muy similar a mi interés inicial cuando estudié construcción
-        civil.
-      </p>
-      <p>
-        Partí estudiando de manera autodidacta
-        <b>Javascript</b> a través de diversos creadores de contenido y luego decidí
-        inscribirme a un Bootcamp para organizar de mejor manera los contenidos a
-        estudiar.
-      </p>
-
-      <h3 class="text-blue-500 text-3xl p-5 font-bold">¿Mis Hobbies?</h3>
-      <p>
-        No todo debe ser programar 🤷🏻‍♂️. Siempre me ha encantado el deporte,
-        Practique <b>Tenis y Waterpolo</b> en mi adolecencia, aunque ahora solo sigo
-        jugando <b>Tenis</b>. Aprovecho mi tiempo libre viendo peliculas o
-        series generalmente de <b>anime</b> además de jugar uno que otro videojuego.
+        Profesional con gran capacidad para <b>organizar y dirigir equipos de trabajo</b> con foco en objetivos concretos,
+        apasionado por los <b>nuevos desafíos y el aprendizaje constante</b>.
+        Inicialmente, estudié y trabajé como Constructor Civil, pero mi interés en la
+        programación me llevó a estudiarla y ofrecer servicios de <b>desarrollo
+        web, SEO y SEM</b> a Pymes y ecommerce. Mi verdadera pasión es la
+        programación, ya que disfruto <b>transformando ideas en proyectos
+        funcionales</b>.comencé aprendiendo Javascript de manera autodidacta y
+        luego me inscribí en un Bootcamp para organizar mejor mis estudios.
+        Además de programar, disfruto del tenis, las películas y el anime.
       </p>
     </section>
     <section
       class="flex flex-col items-center py-[60px] bg-zinc-900"
-      id="skills">
+      id="skills"
+    >
       <h3 class="text-white text-3xl p-5 font-bold">Skills</h3>
-	  <h4 class="text-3xl text-white p-5">Front-end</h4>
+      <h4 class="text-3xl text-white p-5">Front-end</h4>
       <div class="icons-group flex flex-wrap justify-center">
-        <Icono src="https://i.postimg.cc/dQSmcsDs/javascript.webp" alt="Logo Javascript"></Icono>
-        <Icono src="https://i.postimg.cc/Zngr8cXB/react.webp" alt="Logo React"></Icono>
-        <Icono src="https://i.postimg.cc/d3D2ZXNc/astro.webp" alt="Logo Astro"></Icono>
-        <Icono src="https://i.postimg.cc/qR1cR0LG/tailwind.webp" alt="Logo Tailwind"></Icono>
-        <Icono src="https://i.postimg.cc/LX9B2hzX/css.webp" alt="Logo Css"></Icono>
-        <Icono src="https://i.postimg.cc/LsBBcjgw/bootstrap.webp" alt="Logo Bootstrap"></Icono>
+        <Icono
+          src="https://i.postimg.cc/dQSmcsDs/javascript.webp"
+          alt="Logo Javascript"
+        />
+        <Icono
+          src="https://i.postimg.cc/Zngr8cXB/react.webp"
+          alt="Logo React"
+        />
+        <Icono
+          src="https://i.postimg.cc/d3D2ZXNc/astro.webp"
+          alt="Logo Astro"
+        />
+        <Icono
+          src="https://i.postimg.cc/qR1cR0LG/tailwind.webp"
+          alt="Logo Tailwind"
+        />
+        <Icono src="https://i.postimg.cc/LX9B2hzX/css.webp" alt="Logo Css" />
+        <Icono
+          src="https://i.postimg.cc/LsBBcjgw/bootstrap.webp"
+          alt="Logo Bootstrap"
+        />
       </div>
       <h4 class="text-3xl text-white p-5">Back-end</h4>
       <div class="icons-group flex flex-wrap justify-center">
-        <Icono src="https://i.postimg.cc/xT8r8XdB/nodejs1.webp" alt="Logo Nodejs"></Icono>
-        <Icono src="https://i.postimg.cc/QCN2ptJ9/postgre.webp" alt="Logo Postgresql" ></Icono>
-        <Icono src="https://i.postimg.cc/GtMZzCXM/express1.webp" alt="Logo ExpressJS" ></Icono>
+        <Icono
+          src="https://i.postimg.cc/xT8r8XdB/nodejs1.webp"
+          alt="Logo Nodejs"
+        />
+        <Icono
+          src="https://i.postimg.cc/QCN2ptJ9/postgre.webp"
+          alt="Logo Postgresql"
+        />
+        <Icono
+          src="https://i.postimg.cc/GtMZzCXM/express1.webp"
+          alt="Logo ExpressJS"
+        />
       </div>
       <h4 class="text-3xl text-white p-5">Formacion adicional</h4>
       <div class="icons-group flex flex-wrap justify-center">
-        <Icono src="https://i.postimg.cc/VLVxCzrv/wordpress1.webp" alt="Logo Wordpress"></Icono>
-        <Icono src="https://i.postimg.cc/8zfqdxMH/googleads1.webp" alt="Logo Google Ads"></Icono>
-        <Icono src="https://i.postimg.cc/7Pm8q3qg/seo.webp" alt="seo"></Icono>
+        <Icono
+          src="https://i.postimg.cc/VLVxCzrv/wordpress1.webp"
+          alt="Logo Wordpress"
+        />
+        <Icono
+          src="https://i.postimg.cc/8zfqdxMH/googleads1.webp"
+          alt="Logo Google Ads"
+        />
+        <Icono src="https://i.postimg.cc/7Pm8q3qg/seo.webp" alt="seo" />
       </div>
-
     </section>
     <section class="flex flex-col items-center py-[60px]" id="portfolio">
-      <h3 class="text-blue-500 text-3xl p-5 font-bold"> Portafolio 💼</h3>
-      <div class="flex gap-5 flex-wrap">
-        {data.map((proyecto) => (
-          <Card 
-          key={proyecto.id}
-          id={proyecto.id}
-          nombre={proyecto.nombre}
-          descripcion={proyecto.descripcion}
-          demo={proyecto.demo}
-          repositorio={proyecto.repositorio}
-          img={proyecto.img}
-          alt={proyecto.alt}
-          skills={proyecto.skills}
-          repoDisplay={proyecto.repoDisplay}
-          ></Card>
-        )
-                
-        )}
+      <h3 class="text-blue-500 text-3xl p-5 font-bold">Portafolio 💼</h3>
+      <div class="flex gap-5 flex-wrap justify-center">
+        {
+          data.map((proyecto) => (
+            <Card
+              key={proyecto.id}
+              id={proyecto.id}
+              nombre={proyecto.nombre}
+              descripcion={proyecto.descripcion}
+              demo={proyecto.demo}
+              repositorio={proyecto.repositorio}
+              img={proyecto.img}
+              alt={proyecto.alt}
+              skills={proyecto.skills}
+              repoDisplay={proyecto.repoDisplay}
+            />
+          ))
+        }
       </div>
     </section>
-    <section class="flex flex-col gap-10 items-center py-[60px] bg-zinc-900"
-    id="formacion">
+    <section
+      class="flex flex-col gap-10 items-center py-[60px] bg-zinc-900"
+      id="formacion"
+    >
       <h3 class="text-white text-3xl p-5 font-bold">Formación</h3>
-      <GradeCard src="https://broota.s3.amazonaws.com/solicitudes/590/logo/logo_RzsgV2q7VkgSrN9Kw1b5u538XzUHum_200_200.png" alt="Logo Academia desafio latam" titulo="Desarrollo Fullstack Javascript" subtitulo=" Academia Desafio Latam | 2023 - Finalizado"></GradeCard>
-      <GradeCard src="https://logospng.org/download/udemy/udemy-4096.png" alt="Logo Udemy" titulo="Ultimate Javascript" subtitulo="Por: Nicolás Schurmann - 2023 - Finalizado"></GradeCard>
-      <GradeCard src="https://logodownload.org/wp-content/uploads/2019/08/google-adwords-logo-0.png" alt="Logo Google ADS" titulo="Certificacion en anuncios de búsqueda" subtitulo="2022 - Finalizado"></GradeCard>
-      <GradeCard src="https://preuniversitariopreutech.cl/wp-content/uploads/2016/12/Universidad-de-Santiago-de-Chile.png" alt="Logo Universidad de Santiago de Chile" titulo="Construcción Civil" subtitulo="Universidad de Santiago de Chile | 2019 - Titulado"></GradeCard>
+      <GradeCard
+        src="https://broota.s3.amazonaws.com/solicitudes/590/logo/logo_RzsgV2q7VkgSrN9Kw1b5u538XzUHum_200_200.png"
+        alt="Logo Academia desafio latam"
+        titulo="Desarrollo Fullstack Javascript"
+        subtitulo=" Academia Desafio Latam | 2023 - Finalizado"
+      />
+      <GradeCard
+        src="https://logospng.org/download/udemy/udemy-4096.png"
+        alt="Logo Udemy"
+        titulo="Ultimate Javascript"
+        subtitulo="Por: Nicolás Schurmann - 2023 - Finalizado"
+      />
+      <GradeCard
+        src="https://logodownload.org/wp-content/uploads/2019/08/google-adwords-logo-0.png"
+        alt="Logo Google ADS"
+        titulo="Certificacion en anuncios de búsqueda"
+        subtitulo="2022 - Finalizado"
+      />
+      <GradeCard
+        src="https://preuniversitariopreutech.cl/wp-content/uploads/2016/12/Universidad-de-Santiago-de-Chile.png"
+        alt="Logo Universidad de Santiago de Chile"
+        titulo="Construcción Civil"
+        subtitulo="Universidad de Santiago de Chile | 2019 - Titulado"
+      />
     </section>
     <section class="flex flex-col items-center py-[60px]" id="contacto">
-      <h3 class="text-blue-500 text-3xl p-5 font-bold"> Contacto 📬</h3>
+      <h3 class="text-blue-500 text-3xl p-5 font-bold">Contacto 📬</h3>
       <div class="flex flex-col lg:flex-row">
-        <a class="flex justify-center items-center gap-3 w-[180px] h-16 p-3 m-3 bg-blue-500 rounded-md shadow-2xl shadow-zinc-500 hover:translate-x-1 ease-out duration-300" href="mailto:fabian.daza2020@gmail.com">
+        <a
+          class="flex justify-center items-center gap-3 w-[180px] h-16 p-3 m-3 bg-blue-500 rounded-md shadow-2xl shadow-zinc-500 hover:translate-x-1 ease-out duration-300"
+          href="mailto:fabian.daza2020@gmail.com"
+        >
           ✉️ Contactemos
         </a>
-        <a class="flex justify-center items-center gap-3 w-[180px] h-16 p-3 m-3 bg-blue-500 rounded-md shadow-2xl shadow-zinc-500 hover:translate-x-1 ease-out duration-300" href="https://www.linkedin.com/in/fbdaza/"><svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-brand-linkedin"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-            d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
-          ></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"
-          ></path><path d="M12 16l0 -5"></path><path
-            d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
-          <span>Linkedin</span></a>
-        <a class="flex justify-center items-center gap-3 w-[180px] h-16 p-3 m-3 bg-blue-500 rounded-md shadow-2xl shadow-zinc-500 hover:translate-x-1 ease-out duration-300" href="https://github.com/Fabi-daza"><svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-brand-github"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-          ></path></svg><span>Github</span></a>
+        <a
+          class="flex justify-center items-center gap-3 w-[180px] h-16 p-3 m-3 bg-blue-500 rounded-md shadow-2xl shadow-zinc-500 hover:translate-x-1 ease-out duration-300"
+          href="https://www.linkedin.com/in/fbdaza/"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-linkedin"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+            ></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path
+              d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"
+            ></path></svg
+          >
+          <span>Linkedin</span></a
+        >
+        <a
+          class="flex justify-center items-center gap-3 w-[180px] h-16 p-3 m-3 bg-blue-500 rounded-md shadow-2xl shadow-zinc-500 hover:translate-x-1 ease-out duration-300"
+          href="https://github.com/Fabi-daza"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-github"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            ></path></svg
+          ><span>Github</span></a
+        >
       </div>
     </section>
   </main>
 </Layout>
 
 <style>
-
   main {
     margin: auto;
     width: 100%;
@@ -226,20 +269,21 @@ import GradeCard from "../components/Grade-card.astro";
     min-height: 80vh;
     background-position: center;
     background-size: cover;
+    margin-top: 50px;
   }
-	main {
-		margin: auto;
-		width: 100%;
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.hero{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
-    url(../imagenes/hero.webp);
-		with:100%;
-		min-height: 80vh;
-		background-position: center;
-		background-size: cover;
-	}
+  main {
+    margin: auto;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+      url(../imagenes/hero.webp);
+    with: 100%;
+    min-height: 80vh;
+    background-position: center;
+    background-size: cover;
+  }
 </style>
