@@ -2,7 +2,7 @@
     {
         "id":1,
         "nombre": "VisorPyme",
-        "descripcion": "Sitio web desarrollado para la empresa Lofwork, a traves de este sitio emprendimientos pueden hacer un diagnostico en base a distintos pilares y obtener oportunidades de mejora, realizado con React y Express, con base de datos en Postgresql, y diseño responsive",
+        "descripcion": "Sitio web desarrollado para la empresa Lofwork,sitio para que emprendimientos pueden hacer un diagnostico y obtener oportunidades de mejora, desarrollado con React y Express, con base de datos en Postgresql, y diseño responsive",
         "demo":"https://visorpyme.cl",
         "repositorio":null,
         "img":"https://i.postimg.cc/dVgksPJy/695shots-so.png",
