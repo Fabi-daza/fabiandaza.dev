@@ -1,17 +1,17 @@
 [
     {
         "id":1,
-        "nombre": "Mercadotech",
-        "descripcion": "Marketplace para la venta de articulos tecnologicos. App CRUD con react, express y Postgresql",
-        "demo":"https://mercadotech-front.onrender.com/",
-        "repositorio":"https://github.com/Fabi-daza/Mercado-tech",
-        "img":"https://i.postimg.cc/CM90jq7Y/desktop.webp",
-        "alt":"Marketplace de Tecnologia",
+        "nombre": "VisorPyme",
+        "descripcion": "Sitio web desarrollado para la empresa Lofwork, a traves de este sitio emprendimientos pueden hacer un diagnostico en base a distintos pilares y obtener oportunidades de mejora, realizado con React y Express, con base de datos en Postgresql, y diseño responsive",
+        "demo":"https://visorpyme.cl",
+        "repositorio":null,
+        "img":"https://i.postimg.cc/dVgksPJy/695shots-so.png",
+        "alt":"VisorPyme",
         "skills": [
             "https://i.postimg.cc/Zngr8cXB/react.webp",
             "https://i.postimg.cc/GtMZzCXM/express1.webp",
             "https://i.postimg.cc/QCN2ptJ9/postgre.webp",
-            "https://i.postimg.cc/LsBBcjgw/bootstrap.webp"
+            "https://i.postimg.cc/qR1cR0LG/tailwind.webp"
         ]
         
     },
